@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-script {
+    font-family: 'Great Vibes', 'Alex Brush', cursive;
+  }
+  .font-serif-display {
+    font-family: 'Cinzel', 'Playfair Display', Georgia, serif;
+  }
+  .font-sans-body {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+}
+
+/* Custom Background Topo Lines SVG Pattern */
+.bg-topo-pattern {
+  background-color: #15092B;
+  background-image: radial-gradient(circle at 50% 50%, rgba(37, 17, 71, 0.6) 0%, rgba(19, 7, 37, 0.95) 100%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Cpath d='M0 100 Q100 80 200 100 T400 100 M0 150 Q100 120 200 150 T400 150 M0 200 Q100 170 200 200 T400 200 M0 250 Q100 230 200 250 T400 250 M0 300 Q100 280 200 300 T400 300 M0 350 Q100 330 200 350 T400 350 M0 50 Q100 20 200 50 T400 50' stroke='rgba(212, 175, 55, 0.07)' stroke-width='1' fill='none'/%3E%3C/svg%3E");
+  background-size: cover, 400px 400px;
+}
+
+/* Gold Gradient Text & Borders */
+.gold-text-gradient {
+  background: linear-gradient(135deg, #FFF0B3 0%, #F5CE62 40%, #E6B830 70%, #FFF3C4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-bg-gradient {
+  background: linear-gradient(135deg, #FAD980 0%, #E5BA43 50%, #C9991D 100%);
+}
+
+.gold-bg-gradient-hover {
+  background: linear-gradient(135deg, #FFE299 0%, #EFC655 50%, #D8A928 100%);
+}
+
+.gold-border {
+  border-color: rgba(230, 195, 99, 0.4);
+}
+
+.gold-box-shadow {
+  box-shadow: 0 10px 30px -5px rgba(212, 175, 55, 0.25);
+}
+
+/* Golden luxury geometric corner card styling */
+.luxury-card-border {
+  border: 1px solid rgba(229, 186, 67, 0.25);
+  box-shadow: inset 0 0 20px rgba(229, 186, 67, 0.05), 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+/* Glassmorphic Dark Container */
+.glass-panel {
+  background: rgba(30, 14, 56, 0.65);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(229, 186, 67, 0.2);
+}
+
+/* Subtle Shimmer Animation */
+@keyframes goldShimmer {
+  0% { opacity: 0.4; transform: scale(0.98); }
+  50% { opacity: 1; transform: scale(1.02); }
+  100% { opacity: 0.4; transform: scale(0.98); }
+}
+
+.animate-gold-pulse {
+  animation: goldShimmer 3s infinite ease-in-out;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #130725;
+}
+::-webkit-scrollbar-thumb {
+  background: #3B1C6B;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+

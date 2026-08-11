@@ -1,0 +1,6 @@
+{
+  "name": "Birthday Wishing Website",
+  "description": "A luxury interactive birthday wishing & celebration website for Azghan featuring virtual candle blowing, photo gallery slider, guestbook wall, interactive gift box, countdown, and RSVP.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

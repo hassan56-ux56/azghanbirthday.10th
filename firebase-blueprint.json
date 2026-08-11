@@ -1,0 +1,91 @@
+{
+  "entities": {
+    "wishes": {
+      "title": "Character Wishes",
+      "description": "Birthday wishes from characters or guests",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "relation": { "type": "string" },
+        "avatar": { "type": "string" },
+        "text": { "type": "string" },
+        "characterTheme": { "type": "string" },
+        "date": { "type": "string" },
+        "isApproved": { "type": "boolean" }
+      }
+    },
+    "guestbookEntries": {
+      "title": "Guestbook Wall Entries",
+      "description": "Messages posted by guests on the guestbook wall",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "relationship": { "type": "string" },
+        "message": { "type": "string" },
+        "timestamp": { "type": "string" },
+        "likes": { "type": "number" },
+        "characterAvatar": { "type": "string" },
+        "sticker": { "type": "string" }
+      }
+    },
+    "rsvps": {
+      "title": "RSVP Responses",
+      "description": "Guest RSVP submissions for the party",
+      "properties": {
+        "id": { "type": "string" },
+        "guestName": { "type": "string" },
+        "relationship": { "type": "string" },
+        "attending": { "type": "string" },
+        "totalGuests": { "type": "number" },
+        "dietaryNotes": { "type": "string" },
+        "songRequest": { "type": "string" },
+        "timestamp": { "type": "string" }
+      }
+    },
+    "galleryPhotos": {
+      "title": "Gallery Photos",
+      "description": "Memory gallery photos",
+      "properties": {
+        "id": { "type": "string" },
+        "url": { "type": "string" },
+        "title": { "type": "string" },
+        "category": { "type": "string" },
+        "caption": { "type": "string" },
+        "ageTag": { "type": "string" }
+      }
+    },
+    "timelineEvents": {
+      "title": "Timeline Events",
+      "description": "Chronological memory timeline events",
+      "properties": {
+        "year": { "type": "number" },
+        "age": { "type": "number" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "photoUrl": { "type": "string" },
+        "icon": { "type": "string" },
+        "badge": { "type": "string" }
+      }
+    },
+    "gifts": {
+      "title": "Gift Ideas",
+      "description": "Birthday gift registry items",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "category": { "type": "string" },
+        "price": { "type": "string" },
+        "link": { "type": "string" },
+        "status": { "type": "string" },
+        "reservedBy": { "type": "string" }
+      }
+    },
+    "appConfig": {
+      "title": "App Configuration",
+      "description": "Global application configuration and honoring details",
+      "properties": {
+        "honoringDetails": { "type": "object" }
+      }
+    }
+  }
+}
